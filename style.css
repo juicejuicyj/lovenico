@@ -1,0 +1,97 @@
+body {
+    background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png'), #1b1b1b;
+    color: #f8e9c8;
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #ffd700;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.carousel {
+  width: 100vw;
+  height: 60vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #000;
+}
+
+.carousel img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* ✅ 关键：完整显示 + 黑边填充 */
+  display: block;
+}
+
+
+
+button {
+    background: linear-gradient(to right, #5f3c1c, #8c5e28);
+    border: 2px solid #c2aa6c;
+    color: #f5deb3;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 0 8px #000;
+    font-family: 'Cinzel', serif;
+}
+
+button:hover {
+    background: #a37e4f;
+}
+
+#nowPlaying {
+    color: #e6b800;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.chat-container {
+    background: rgba(50, 35, 20, 0.6);
+    border: 3px solid #a97b50;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #000;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    font-size: 16px;
+    padding: 10px;
+    background: #292018;
+    color: #fff8dc;
+    border: 2px solid #a97b50;
+    border-radius: 5px;
+    font-family: 'Cinzel', serif;
+}
+
+#response {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #ffcc99;
+}
+
+.stat {
+    margin-top: 20px;
+    color: #ffcc99;
+    font-size: 18px;
+}
+
+#prophecyText {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ffecc1;
+    transition: opacity 0.5s;
+}

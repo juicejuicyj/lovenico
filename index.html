@@ -1,29 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="zh">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>爱倪么么哒</title>
+    <title>阿斯代伦对倪的爱</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h2>点击按钮播放阿斯代伦的爱</h2>
-    <button onclick="playRandom()">▶️ 播放</button>
-    <audio id="player" controls></audio>
-    <p id="nowPlaying" style="font-weight:bold;"></p>
+    <div class="carousel">
+        <img id="carouselImg" src="images/img1.jpg" alt="轮播图">
+    </div>
 
-    <script>
-        const audioFiles = ["A bed and so much more..mp3", "A pleasure..mp3", "And all I had to do was not fall for you... Which is where my nice, simple plan fell apart..mp3", "And as you're my consort, that makes us the most powerful people in the world..mp3", "And I do apologise for last night. I may have gotten a little... overexcited.mp3", "And it was your lovely voice that woke me, so....mp3", "And neither would I. Together, we can do anything..mp3", "And that makes us the most powerful couple in the world..mp3", "And we're going to have a lot of fun..mp3", "Anyway, I still get to look at you and remember everything we did together..mp3", "Are you now Don't make promises you can't keep, darling..mp3", "Are you ready, my darling.mp3", "Ask me anything, and it will be yours..mp3", "At least you have the memory of our night together to reflect on. You're welcome, by the way..mp3", "Bad girl..mp3", "Behold my tears..mp3", "By the hells. Sex, my dear! Or whatever you can manage given your... situation..mp3", "By the hells. Sex, my dear. A night of passion..mp3", "Cheers..mp3", "Come on, my love. Let's show them what we can do..mp3", "Come, give yourself to me..mp3", "Cute..mp3", "Do you have a moment I think we need to talk..mp3", "Do you still want to be together.mp3", "Don't tempt me, darling..mp3", "Don't worry, I'm here..mp3", "Don't worry, I've got you..mp3", "Easy now, darling. You've got this. And I've got you..mp3", "Every part of your perfect body whispers temptation - it's as if the Gods made you just to ruin me..mp3", "Excellent!.mp3", "Fine, I'll save you..mp3", "Given the noise you made last night, I'm sure they already know..mp3", "Good for you..mp3", "Good luck..mp3", "Good morning, beautiful..mp3", "Ha! Oh, my dear. I'd like to see you try..mp3", "Have a good night..mp3", "Having fun yet.mp3", "Hello again, beautiful. Back for more.mp3", "Hello darling..mp3", "Hello, beautiful..mp3", "Hello, darling. Don't be shy, I promise not to bite until we've been formally introduced..mp3", "Hello, my sweet little spawn..mp3", "Help me do this. Please..mp3", "Here's my little treat with their cheeks all flushed. You will come to my bed tonight, won't you.mp3", "Hmm Oh, I was just pondering that heart of yours..mp3", "How could I say no.mp3", "How lucky you are that I chose you as my consort. Chose you to help me take Baldur's Gate, then sit by my side as I rule it..mp3", "How romantic..mp3", "How strange, I feel... marvellous!.mp3", "I did. We did..mp3", "I do hope you'll be comfortable in our little camp..mp3", "I have missed you. And now you're all mine, and I'm all yours. Until morning at least..mp3", "I hope there's nothing troubling you, my dear.mp3", "I just want to survive, same as you..mp3", "I knew I was right about you. You're a true friend..mp3", "I knew you'd come around..mp3", "I like it. Suits you..mp3", "I look forward to the day. Meanwhile, my hunger for you will only deepen..mp3", "I love you. I love this. And I want it all..mp3", "I love you..mp3", "I still need you..mp3", "I suppose... If this is what you want, then I shall provide..mp3", "I think you want to be known. To be tasted..mp3", "I thought we had an understanding, but I guess I'll just entertain myself tonight..mp3", "I want to thank you..mp3", "I was thinking about a warm fire and charming company, actually..mp3", "I will endeavour to please..mp3", "I will miss you, though. Since the moment we met, you have been spectacular..mp3", "I'd - I'd even come with you. We can cut our way through the Hells together..mp3", "I'd rather be the only dark power inside your body, if it's all the same to you..mp3", "I'll be there soon, my lady..mp3", "I'll be waiting..mp3", "I'll come to you tonight, when you're snugly wrapped in your bedroll and we can have a little privacy..mp3", "I'll never forget the person you used to be - the beauty I bedded, the warrior I fought beside, the hero that saved this city..mp3", "I'll never forget you. I'll never forget what you did for this world..mp3", "I'll see you later, I'm sure. Sleep tight..mp3", "I'm sure I'll see you when I get back. Sleep tight..mp3", "I've missed this..mp3", "I... forgive me..mp3", "Impatient are we Well who am I to deny you.mp3", "In my name..mp3", "Indeed you will, my love. I can't wait..mp3", "Indeed you will, my love. Indeed you will..mp3", "Interesting..mp3", "It's lovely....mp3", "Just remember to fetch me next time. I'd hate to think you were holding out on me..mp3", "Just tell me what I need to know. Tell me your secrets..mp3", "Just when I thought I couldn't love you any more..mp3", "Later on, when we are at rest, I will eat you right up. Just enough to give me strength, and just enough to leave you wishing for more..mp3", "Let's dance..mp3", "Let's find our own little piece of nowhere. Somewhere we can lose ourselves and forget all this madness..mp3", "Let's get you up, dear..mp3", "Let's keep you cute..mp3", "Look at you, precious thing. You always stare so eagerly..mp3", "Look, I had a plan. A nice, simple plan - seduce you, sleep with you, manipulate your feelings so you'd never turn on me..mp3", "Magnificent..mp3", "Mmm. Delicious..mp3", "My consort, we are so close to our triumph, I can almost taste it..mp3", "My fair consort, I can't wait to dine upon this four-course meal with you..mp3", "My mind is finally clear. I feel strong. I feel... happy!.mp3", "Never say never, darling..mp3", "No more blood. No more killing. Just this, please..mp3", "No one ever looked out for me. No one ever said a kind thing to me..mp3", "Oh don't be like that, I'd never want to control you. I love you..mp3", "Oh don't worry, darling. I won't bite unless you ask very, very nicely..mp3", "Oh my love, how could I say no.mp3", "Oh you're such a sweetheart..mp3", "Oh, darling, would you.mp3", "Oh, darling. I love the way you think..mp3", "Oh, don't look at me. That is all yours..mp3", "Oh, eh - sorry. I didn't mean to... well, you know..mp3", "On your knees, darling..mp3", "Once everyone's in their bedrolls, we'll slip out of ours and find each other..mp3", "One hundred and seventy years. You were one of my first..mp3", "Please. Only be a taste, I swear. I'll be well, you'll be fine, and everything can go back to normal.mp3", "Really I thought we had an understanding. A connection..mp3", "See you in the morning. Sweet dreams, darling..mp3", "So eager! You're delicious..mp3", "Stay strong, darling..mp3", "Sweet dreams, darling..mp3", "Take me with you!.mp3", "Thank you for your unerring support..mp3", "Thank you, by the way. This is... well, it's something..mp3", "Thank you, my love. Thank you..mp3", "Thank you, your generosity is appreciated..mp3", "Thank you. And thank you for what you did..mp3", "Thank you. I won't forget this..mp3", "Thank you..mp3", "That - that was amazing..mp3", "That feels good..mp3", "That thing is tiny, and I am not..mp3", "The world is ours for the taking. So, what would you like.mp3", "Then what are we waiting for, darling.mp3", "There you are. I've been waiting, you know..mp3", "There's no backing out now - we'll be together forever. I can promise you that..mp3", "This gets better and better..mp3", "Together at last..mp3", "Trust me when I say I know the feeling. But you can resist the urge..mp3", "Until then, you can enjoy my company. You can benefit from my power. But you will not be in my heart..mp3", "Until you..mp3", "Waiting to have you..mp3", "We could be together for eternity, ruling this world side by side. We could have it all..mp3", "Well figure it out. I need to know I can rely on you..mp3", "Well this is delightful..mp3", "Well, someone had some fun..mp3", "Were you actually worried I was angry Oh you sweet little thing - I'm not going to abandon a feast just be cause someone else had a nibble..mp3", "What do any of us want Pleasure..mp3", "When I'm with you, I feel practically alive, yet I crave only to die again with you..mp3", "Where would you be without me.mp3", "Why thank you, darling..mp3", "Yes, beautiful.mp3", "Yes, darling.mp3", "Yes, love.mp3", "Yes, my sweet What is it.mp3", "Yes, my treasure.mp3", "You -... you're incredible. You deserve something real. I want us to be something real..mp3", "You are perfect, every time..mp3", "You did more than that. You believed in me - believed I was enough just the way I am..mp3", "You have your charms... more than you think..mp3", "You know, we could always make our own entertainment, darling. Get a little closer, so to speak..mp3", "You really ended things with him, just to be with me.mp3", "You saved me back there. I may not have appreciated it at the time, but I do now. Thank you..mp3", "You sleep light. I thought you'd be exhausted..mp3", "You sweet, sweet thing. I want what's best for you too, of course..mp3", "You think I'd kill you, just like that Darling, I would never!.mp3", "You were by my side through all of this. Through bloodlust and pain and misery. You were patient. You cared. You trusted me when that was an objectively stupid thing to do..mp3", "You're a sweetheart, but you don't need to worry - I'm just thinking out loud..mp3", "You're lucky I'm such an open-minded person..mp3", "You've never tasted so sweet, darling..mp3", "Your hero is here..mp3", "Yours. Mine. Our collective ecstasy..mp3"];
 
-        function playRandom() {
-            const index = Math.floor(Math.random() * audioFiles.length);
-            const audio = document.getElementById("player");
-            const nowPlaying = document.getElementById("nowPlaying");
+    <h2>🎵 阿斯代伦想对倪说... 🎵</h2>
+    <button onclick="playRandom()">▶️再说一句 </button>
+    <audio id="player" controls muted></audio>
+    <p id="nowPlaying"></p>
 
-            audio.src = audioFiles[index];
-            audio.play();
 
-            nowPlaying.innerText = "阿斯代伦想对倪说：" + audioFiles[index];
-        }
-    </script>
+
+    <div class="stat">
+        ❤️ 阿斯代伦已对倪说了 <span id="loveCount">0</span> 句话
+    </div>
+
+    <div class="chat-container">
+    <h3>🔮 阿斯代伦的神秘预言</h3>
+    <button onclick="revealProphecy()">🎴 占卜命运</button>
+    <p id="prophecyText"></p>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
